@@ -1,8 +1,6 @@
-```mermaid
 graph TD
-    Internet --> Firewall
-    Firewall --> LoadBalancer
-    LoadBalancer --> WebServer1
-    LoadBalancer --> WebServer2
-    WebServer1 --> DBServer
-    WebServer2 --> DBServer
+    Internet --> FW[Firewall]
+    FW --> DMZ[DMZ Network]
+    DMZ --> WEB[Web Server]
+    FW --> LAN[Internal Network]
+    LAN --> DB[Database Server]
