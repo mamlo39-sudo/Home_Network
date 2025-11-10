@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     Internet --> FW[Firewall]
     FW --> DMZ[DMZ Network]
